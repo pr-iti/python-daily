@@ -1,0 +1,2 @@
+this is the new line in file after opening in the write modethis is the new file line for append .    this is the new file line for append . 
+ this is new line in the file 

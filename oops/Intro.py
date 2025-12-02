@@ -1,11 +1,12 @@
 class game:
 
-    # class members 
-      # body-----
+    # class attributes
+    name = "it is a class attribute name"
+      
 
     #methods of the class / behaviours
     def game_details(self,name,players):
-        self.name = name
+        self.name = name # object attribute >> class attribute 
         self.players = players
         print(self.name,self.players)
     
@@ -18,6 +19,8 @@ game1.game_details("kho-kho","7")
 game1.game_rules()
 game2.game_details("chess","4")
 
+print(game1.name) # prints abject attribute
+print(game1)
 # use of self ------
 #  self is used as an object everytime an object is created
 # it is one of the in-build proprties of python
@@ -28,25 +31,25 @@ class Nothing:
     pass #without pass this will  throw an error 
 
 #----------------------without   _init_()     ---------------------------------------------------
-class Persons:
-  def person_Details(self, name, age=18):
-    self.name = name
-    self.age = age
+# class Persons:
+#   def person_Details(self, name, age=18):
+#     self.name = name
+#     self.age = age
 
-p1 = Persons()
-p1.person_Details("Emil", 30)
+# p1 = Persons()
+# p1.person_Details("Emil", 30)
 
-print(p1)  # gives memory location
-print(p1.name)
-print(p1.age)
+# print(p1)  # gives memory location
+# print(p1.name)
+# print(p1.age)
 
-#_init_() -> this is the fun. which is always called to initiate the class everytime an obj. is created
-class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
+# #_init_() -> this is the fun. which is always called to initiate the class everytime an obj. is created
+# class Person:
+#   def __init__(self, name, age):
+#     self.name = name
+#     self.age = age
 
-p1 = Person("Linus", 28)
+# p1 = Person("Linus", 28)
 
-print(p1.name)
-print(p1.age)
+# print(p1.name)
+# print(p1.age)
